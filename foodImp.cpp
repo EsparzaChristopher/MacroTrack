@@ -159,7 +159,7 @@ void food::saveToFile(string filename) {
                 << current->fat << "\n";
         current = current->next;  // Advance to next node
     }
-
+    outFile.flush();
     outFile.close();
     cout << "Food list saved to " << filename << endl;
 }
